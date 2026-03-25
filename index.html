@@ -1116,7 +1116,7 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
           <p class="proj-desc">Fully offline-capable multi-agent AI assistant using a hierarchical CodeAgent architecture (smolagents/HuggingFace). A Manager Agent orchestrates a Web Search Agent (DuckDuckGo) and a RAG-based Retriever Agent, delegating queries intelligently across both. LLM inference runs locally via Ollama. RAG pipeline uses HuggingFace tokenizer-aware chunking, thenlper/gte-small embeddings, and a persisted FAISS vector index. Chat history stored in PostgreSQL via async SQLAlchemy; responses stream via SSE. Fully Dockerized with docker-compose.</p>
           <div class="proj-foot">
             <a class="proj-link" href="https://github.com/nguyenhoang2001/Multiple-Agentic-System-Base" target="_blank" rel="noopener">▶ View on GitHub</a>
-            <span class="proj-stars">★ 29 stars</span>
+            <span class="proj-stars" id="gh-stars">★ <span id="gh-star-count">…</span> stars</span>
           </div>
         </div>
       </div>
@@ -1321,6 +1321,16 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
   // Always scroll to top on page load/reload
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   window.scrollTo(0, 0);
+
+  // Live GitHub star count
+  fetch('https://api.github.com/repos/nguyenhoang2001/Multiple-Agentic-System-Base')
+    .then(r => r.json())
+    .then(data => {
+      if (data.stargazers_count !== undefined) {
+        document.getElementById('gh-star-count').textContent = data.stargazers_count;
+      }
+    })
+    .catch(() => { document.getElementById('gh-star-count').textContent = '29'; });
 
   function openLightbox(src) {
     document.getElementById('eduLightboxImg').src = src;
