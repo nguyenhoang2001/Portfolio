@@ -382,7 +382,7 @@ section{position:relative;z-index:2;}
    PROJECTS — TABBED GALLERY
 ══════════════════════════════════════════════ */
 #projects,#working-experience,#proficient-projects{padding:0 0 120px;}
-#working-experience{padding-top:120px;}
+#working-experience{padding-top:0;}
 .exp-list{display:flex;flex-direction:column;gap:28px;}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;}
 .tab-bar{
@@ -783,9 +783,9 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
-    <li><a href="#specialties">Skills</a></li>
     <li><a href="#working-experience">Experience</a></li>
     <li><a href="#proficient-projects">Projects</a></li>
+    <li><a href="#specialties">Skills</a></li>
     <li><a href="#language">Language</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -968,72 +968,6 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
 
   </div>
 </section>
-  <div class="wrap">
-    <div class="sec-eyebrow">Skills</div>
-    <h2 class="sec-title">Technical <span class="grad-text">Expertise</span></h2>
-
-    <div class="spec-grid">
-      <div class="spec-card reveal">
-        <div class="spec-icon">🧠</div>
-        <div class="spec-name">AI &amp; ML</div>
-        <div class="spec-desc">Building and deploying end-to-end AI systems — from LLM fine-tuning and RAG pipelines to deep learning and computer vision models.</div>
-        <div class="spec-tags">
-          <span class="spec-tag">LLM</span>
-          <span class="spec-tag">RAG</span>
-          <span class="spec-tag">FAISS</span>
-          <span class="spec-tag">NLP</span>
-          <span class="spec-tag">Deep Learning</span>
-          <span class="spec-tag">Hugging Face</span>
-        </div>
-      </div>
-      <div class="spec-card reveal">
-        <div class="spec-icon">🛠️</div>
-        <div class="spec-name">Frameworks &amp; Tools</div>
-        <div class="spec-desc">End-to-end tooling for AI backends and agent systems — API development, orchestration, containerisation and retrieval.</div>
-        <div class="spec-tags">
-          <span class="spec-tag">FastAPI</span>
-          <span class="spec-tag">SQLAlchemy</span>
-          <span class="spec-tag">LangChain</span>
-          <span class="spec-tag">Docker</span>
-          <span class="spec-tag">smolagents</span>
-        </div>
-      </div>
-      <div class="spec-card reveal">
-        <div class="spec-icon">💻</div>
-        <div class="spec-name">Languages</div>
-        <div class="spec-desc">Proficient across systems, scripting and application languages — from AI backends to embedded and full-stack development.</div>
-        <div class="spec-tags">
-          <span class="spec-tag">Python</span>
-          <span class="spec-tag">C++</span>
-          <span class="spec-tag">C#</span>
-          <span class="spec-tag">C</span>
-          <span class="spec-tag">TypeScript / JS</span>
-        </div>
-      </div>
-      <div class="spec-card reveal">
-        <div class="spec-icon">☁️</div>
-        <div class="spec-name">Cloud &amp; DevOps</div>
-        <div class="spec-desc">Deploying and managing production AI services on cloud infrastructure with CI/CD, containerisation and reverse proxying.</div>
-        <div class="spec-tags">
-          <span class="spec-tag">CI/CD</span>
-          <span class="spec-tag">Nginx</span>
-          <span class="spec-tag">AWS</span>
-          <span class="spec-tag">Docker</span>
-        </div>
-      </div>
-      <div class="spec-card reveal">
-        <div class="spec-icon">🗄️</div>
-        <div class="spec-name">Databases</div>
-        <div class="spec-desc">Designing and querying relational and managed databases for AI backends — schema design, query optimisation and cloud storage.</div>
-        <div class="spec-tags">
-          <span class="spec-tag">PostgreSQL</span>
-          <span class="spec-tag">SQLite</span>
-          <span class="spec-tag">Supabase</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ══ WORKING EXPERIENCE ═══════════════════════════════════ -->
 <section id="working-experience">
@@ -1188,6 +1122,75 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
         </div>
       </div>
     </div><!-- end proj-grid -->
+  </div>
+</section>
+
+<!-- ══ SKILLS ════════════════════════════════════════════ -->
+<section id="specialties">
+  <div class="wrap">
+    <div class="sec-eyebrow">Skills</div>
+    <h2 class="sec-title">Technical <span class="grad-text">Expertise</span></h2>
+
+    <div class="spec-grid">
+      <div class="spec-card reveal">
+        <div class="spec-icon">🧠</div>
+        <div class="spec-name">AI &amp; ML</div>
+        <div class="spec-desc">Building and deploying end-to-end AI systems — from LLM fine-tuning and RAG pipelines to deep learning and computer vision models.</div>
+        <div class="spec-tags">
+          <span class="spec-tag">LLM</span>
+          <span class="spec-tag">RAG</span>
+          <span class="spec-tag">FAISS</span>
+          <span class="spec-tag">NLP</span>
+          <span class="spec-tag">Deep Learning</span>
+          <span class="spec-tag">Hugging Face</span>
+        </div>
+      </div>
+      <div class="spec-card reveal">
+        <div class="spec-icon">🛠️</div>
+        <div class="spec-name">Frameworks &amp; Tools</div>
+        <div class="spec-desc">End-to-end tooling for AI backends and agent systems — API development, orchestration, containerisation and retrieval.</div>
+        <div class="spec-tags">
+          <span class="spec-tag">FastAPI</span>
+          <span class="spec-tag">SQLAlchemy</span>
+          <span class="spec-tag">LangChain</span>
+          <span class="spec-tag">Docker</span>
+          <span class="spec-tag">smolagents</span>
+        </div>
+      </div>
+      <div class="spec-card reveal">
+        <div class="spec-icon">💻</div>
+        <div class="spec-name">Languages</div>
+        <div class="spec-desc">Proficient across systems, scripting and application languages — from AI backends to embedded and full-stack development.</div>
+        <div class="spec-tags">
+          <span class="spec-tag">Python</span>
+          <span class="spec-tag">C++</span>
+          <span class="spec-tag">C#</span>
+          <span class="spec-tag">C</span>
+          <span class="spec-tag">TypeScript / JS</span>
+        </div>
+      </div>
+      <div class="spec-card reveal">
+        <div class="spec-icon">☁️</div>
+        <div class="spec-name">Cloud &amp; DevOps</div>
+        <div class="spec-desc">Deploying and managing production AI services on cloud infrastructure with CI/CD, containerisation and reverse proxying.</div>
+        <div class="spec-tags">
+          <span class="spec-tag">CI/CD</span>
+          <span class="spec-tag">Nginx</span>
+          <span class="spec-tag">AWS</span>
+          <span class="spec-tag">Docker</span>
+        </div>
+      </div>
+      <div class="spec-card reveal">
+        <div class="spec-icon">🗄️</div>
+        <div class="spec-name">Databases</div>
+        <div class="spec-desc">Designing and querying relational and managed databases for AI backends — schema design, query optimisation and cloud storage.</div>
+        <div class="spec-tags">
+          <span class="spec-tag">PostgreSQL</span>
+          <span class="spec-tag">SQLite</span>
+          <span class="spec-tag">Supabase</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
