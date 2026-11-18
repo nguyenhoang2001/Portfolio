@@ -381,7 +381,7 @@ section{position:relative;z-index:2;}
 /* ══════════════════════════════════════════════
    PROJECTS — TABBED GALLERY
 ══════════════════════════════════════════════ */
-#projects,#working-experience,#proficient-projects{padding:0 0 120px;}
+#projects,#working-experience,#publications,#proficient-projects{padding:0 0 120px;}
 #working-experience{padding-top:0;}
 .exp-list{display:flex;flex-direction:column;gap:28px;}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;}
@@ -784,6 +784,7 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#working-experience">Experience</a></li>
+    <li><a href="#publications">Publications</a></li>
     <li><a href="#proficient-projects">Projects</a></li>
     <li><a href="#specialties">Skills</a></li>
     <li><a href="#language">Language</a></li>
@@ -807,7 +808,7 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
 
         I build <strong>LLM-powered systems</strong> that work in the real world — from multi-agent pipelines and RAG architectures to production APIs and cloud deployments.
 
-        M.S. in AI from <strong>La Trobe University</strong>, B.Eng. from <strong>HCMUT</strong>, and first-author on a published paper in Human Factors (IF 3.3). Based in Ho Chi Minh City, open to global opportunities.
+        AI Software Engineer at <strong>Avoice</strong> (Y Combinator-backed). M.S. in AI from <strong>La Trobe University</strong>, B.Eng. from <strong>HCMUT</strong>, first author of a paper at IAAA 2026 (Springer LNNS) and first co-author of a paper in Human Factors (IF 3.3). Based in Ho Chi Minh City, open to global opportunities.
       </p>
       <div class="hero-btns">
         <button class="btn-primary" onclick="document.getElementById('proficient-projects').scrollIntoView({behavior:'smooth'})">▶ View My Work</button>
@@ -849,7 +850,7 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
       <div class="about-card manual reveal">
         <div class="about-card-label">📌 Background</div>
         <h3>Who I Am</h3>
-        <p>AI engineer with an M.S. from La Trobe University and a B.Eng. in Computer Engineering from HCMUT. I've built multi-agent pipelines, RAG systems, and cloud-deployed APIs — and published first-author research in Human Factors (IF 3.3). I care about clean architecture, reproducibility, and writing code that holds up in production. Off the clock, you'll find me out running — the perfect pace for thinking through hard problems.</p>
+        <p>AI engineer with an M.S. from La Trobe University and a B.Eng. in Computer Engineering from HCMUT. I currently work as an AI Software Engineer at Avoice, a Y Combinator-backed company. I've built multi-agent pipelines, RAG systems, and cloud-deployed APIs — and published first-author research at IAAA 2026 (Springer LNNS) and first co-author research in Human Factors (IF 3.3). I care about clean architecture, reproducibility, and writing code that holds up in production. Off the clock, you'll find me out running — the perfect pace for thinking through hard problems.</p>
         <a href="https://www.strava.com/athletes/156197409" target="_blank" rel="noopener noreferrer" class="strava-link">🏃 Follow on Strava</a>
       </div>
 
@@ -977,6 +978,27 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
 
     <div class="exp-list">
 
+      <!-- Avoice -->
+      <div class="exp-card reveal">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">AI Software Engineer</div>
+            <div class="exp-company">Avoice (Y Combinator-backed)</div>
+          </div>
+          <div class="exp-period">2026 – Present</div>
+        </div>
+        <p class="exp-desc" style="margin-bottom:0">
+          Build an AI-powered QA/QC system that analyses detailed elements of architectural drawings,
+          running automated design checks page by page on uploaded drawing sets; improved per-page accuracy
+          and resolved memory failures when processing large, high-resolution PDFs. Integrate LLM-powered
+          features so users can complete tasks with AI assistance, including Outlook and Gmail add-ins that
+          file emails into projects, answer questions about project correspondence and draft replies.
+          Engineered an agentic development system: a coordinated team of AI agents that triages tasks,
+          analyses requirements, implements, tests and verifies features, taking work from ticket to
+          review-ready pull request with minimal manual prompting.
+        </p>
+      </div>
+
       <!-- La Trobe University -->
       <div class="exp-card reveal">
         <div class="exp-header">
@@ -1018,6 +1040,59 @@ footer span{font-family:'JetBrains Mono',monospace;color:var(--cyan);}
           <a class="exp-link" href="https://www.facebook.com/gaming/play/403392095241187/" target="_blank" rel="noopener">🎮 Bubble Fall</a>
           <a class="exp-link" href="https://www.facebook.com/gaming/play/416587040563227/" target="_blank" rel="noopener">🎮 Solitaire</a>
           <a class="exp-link" href="https://www.facebook.com/gaming/play/597937072506335/" target="_blank" rel="noopener">🎮 Solitaire Tripeaks Journey</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PUBLICATIONS ════════════════════════════════════ -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-eyebrow">Publications</div>
+    <h2 class="sec-title">Peer-Reviewed <span class="grad-text">Publications</span></h2>
+
+    <div class="exp-list">
+
+      <!-- IAAA 2026 -->
+      <div class="exp-card reveal">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">TinyRAG for Smart Homes: A Multi-Agent IoT Automation Framework</div>
+            <div class="exp-company">IAAA 2026 · Springer LNNS (Scopus-indexed)</div>
+            <div class="exp-location">First author</div>
+          </div>
+          <div class="exp-period">2026</div>
+        </div>
+        <p class="exp-desc">
+          Edge-deployable, privacy-preserving smart-home framework that unifies Tiny Language Models, RAG
+          and staged multi-agent orchestration (Classification, Receiver, IoT Action and Web agents), with
+          CoreIoT JSON-RPC actuation and a three-tier FAISS memory layer. With a quantized 5.1B model on
+          local hardware it reached 92.5% intent accuracy, 90.2% slot-filling F1 and a 776 MB memory footprint.
+        </p>
+        <div class="exp-links">
+          <a class="exp-link" href="https://drive.google.com/file/d/1GCQZlgijvPXXbYzEje4_Eim9pi1YdhF-/view?usp=sharing" target="_blank" rel="noopener">📄 Full Paper (PDF)</a>
+          <a class="exp-link" href="https://edas.info/showPaper.php?m=1571276264" target="_blank" rel="noopener">📜 Conference Record (EDAS)</a>
+        </div>
+      </div>
+
+      <!-- Human Factors 2025 -->
+      <div class="exp-card reveal">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">A Comparative Evaluation of Pointing and Crossing in Moving Target Selection</div>
+            <div class="exp-company">Human Factors (SAGE / HFES) · Q1, IF 3.3</div>
+            <div class="exp-location">First co-author</div>
+          </div>
+          <div class="exp-period">2025</div>
+        </div>
+        <p class="exp-desc">
+          Led a stylus-based user study benchmarking crossing against standard pointing for moving targets,
+          establishing empirical guidance for interface design.
+        </p>
+        <div class="exp-links">
+          <a class="exp-link" href="https://journals.sagepub.com/doi/full/10.1177/00187208251386219" target="_blank" rel="noopener">📜 doi:10.1177/00187208251386219</a>
         </div>
       </div>
 
